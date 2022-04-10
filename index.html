@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fresh Food Expiration Tracker</title>
+</head>
+
+<body class="container p-5">
+
+    <header class="row justify-content-center mb-3">
+        <div class="col-8 m-2 p-2 rounded-pill d-flex justify-content-center bg-light text-center shadow">
+            <h1>Fresh Food Expiration</h1>
+        </div>
+    </header>
+
+    <div class="row justify-content-center">
+
+        <div class="card col-md-11 col-lg-5 m-3 shadow">
+            <div class="card-body rounded">
+                <div class="form-row mt-3">
+                    <div class="col-sm">
+                        <div class="form-floating mb-3">
+                            <input type="text" placeholder="Item" class="form-control" id="new-item">
+                            <label for="new-task">Item</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="mb-3">
+                            <label for="new-start-date">Exipration Date</label>
+                            <input type="date" class="form-control" id="new-expiration-date">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="create" class="btn btn-success">Create</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 m-3">
+            <table id="list" class="table table-hover table-light table-striped table-bordered text-center shadow">
+                <tr class>
+                    <th scope="col">Item</th>
+                    <th scope="col">Date Added</th>
+                    <th scope="col">Expiration Date</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
